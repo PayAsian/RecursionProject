@@ -26,13 +26,26 @@ public class RecursionTool
 		}
 	}
 	
-	public int calculateIterativeFIb()
+	public int calculateIterativeFIb(int n)
 	{
-		
+		int f1 = 0;
+		   int f2 = 1;
+		   int fn;
+		   for ( int i = 2; i < n; i++ )
+		   {
+		      fn = f1 + f2;
+		      f1 = f2;
+		      f2 = fn;
+		   }
+		   
+		   return calculateIterativeFIb(0);
 	}
 	
-	public int calculateIterativeFact()
+	public int calculateIterativeFact(int N)
 	{
-		
+		int product = 1;
+		  for ( int j=1; j<=N; j++ )
+		    product *= j;
+		  return product;
 	}
 }
