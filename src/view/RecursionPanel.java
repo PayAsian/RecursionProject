@@ -68,6 +68,21 @@ public class RecursionPanel extends JPanel
 	
 	private void setupListeners()
 	{
-		
+		FactButton.addActionListener(new ActionListener()
+		{
+				public void actionPerformed(ActionEvent click)
+				{
+					RecDisplay.setText(baseController.transferFactorial(RecField.getText()));
+				}
+		});
+		FibButton.addActionListener(new ActionListener()
+			{
+				public void actionPerformed(ActionEvent click)
+				{
+				
+				}
+			});
+			}
 	}
-}
+
+

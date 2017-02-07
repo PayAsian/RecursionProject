@@ -22,13 +22,13 @@ public RecursionController()
 	
 }
 
-public String transerFactorial(String input)
+public String transferFactorial(String input)
 {
 	String factorialInfo = "The factorial of " + input + " is ";
 	
 	if(isValid(input))
 	{
-		factorialInfo += mathTool.calculateFactorial(Integer.parseInt(input));
+		factorialInfo += mathTool.calculateFactorial(Double.parseDouble(input));
 	}
 	
 	return factorialInfo;
@@ -38,7 +38,7 @@ private boolean isValid(String testValue)
 {
 	try
 	{
-		int test = Integer.parseInt(testValue);
+		double test = Double.parseDouble(testValue);
 		if(test >= 0)
 		{
 		return true;	

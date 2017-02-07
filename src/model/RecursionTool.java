@@ -2,7 +2,7 @@ package model;
 
 public class RecursionTool 
 {
-	public int calculateFactorial(int currentNumber)
+	public double calculateFactorial(double currentNumber)
 	{
 		if(currentNumber == 0 || currentNumber == 1)
 		{
