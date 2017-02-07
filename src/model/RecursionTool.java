@@ -13,4 +13,26 @@ public class RecursionTool
 			return calculateFactorial(currentNumber - 1) * currentNumber;
 		}
 	}
+	
+	public int calculateFibonacci(int currentNumber)
+	{
+		if(currentNumber == 0 || currentNumber == 0)
+		{
+			return 1;
+		}
+		else
+		{
+			return calculateFibonacci(currentNumber - 1) + calculateFibonacci(currentNumber -2);
+		}
+	}
+	
+	public int calculateIterativeFIb()
+	{
+		
+	}
+	
+	public int calculateIterativeFact()
+	{
+		
+	}
 }

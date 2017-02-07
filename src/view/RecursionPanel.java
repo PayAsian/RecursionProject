@@ -79,7 +79,7 @@ public class RecursionPanel extends JPanel
 			{
 				public void actionPerformed(ActionEvent click)
 				{
-				
+					RecDisplay.setText(baseController.transferFibonacci(RecField.getText()));
 				}
 			});
 			}
