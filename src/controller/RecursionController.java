@@ -38,7 +38,11 @@ public String transferFactorial(String input)
 	factorialInfo += "\n" + mathTimer.toString();
 	
 	return factorialInfo;
+	
+	
 }
+
+
 
 public String transferFibonacci(String input)
 {
